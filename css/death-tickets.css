@@ -1,0 +1,74 @@
+/* === MAIN SECTION === */
+body {
+  background-color: #000;
+  color: #ffff66;
+  font-family: 'UnifrakturCook', 'Cinzel', 'Georgia', serif;
+}
+
+/* === Card Styling === */
+.death-ticket-card {
+  background-color: #111; /* Dark interior */
+  border: 1px solid #ffff66;
+  box-shadow: 0 0 15px rgba(255, 255, 102, 0.3);
+  border-radius: 12px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* === Form Elements === */
+.death-ticket-card .form-label {
+  font-weight: bold;
+  color: #ffff66;
+}
+
+.death-ticket-card .form-control,
+.death-ticket-card .form-select {
+  background-color: #000;
+  color: #ffff66;
+  border: 1px solid #ffff66;
+}
+
+.death-ticket-card .form-control:focus,
+.death-ticket-card .form-select:focus {
+  box-shadow: 0 0 5px #ffff66;
+  border-color: #ffff66;
+}
+
+/* === Checkbox === */
+.death-ticket-card .form-check-input {
+  background-color: #000;
+  border: 1px solid #ffff66;
+}
+
+.death-ticket-card .form-check-input:focus {
+  box-shadow: 0 0 5px #ffff66;
+}
+
+.death-ticket-card .form-check-label {
+  color: #ffff66;
+}
+
+/* === Button === */
+.death-ticket-card .btn {
+  background-color: #000;
+  color: #ffff66;
+  border: 1px solid #ffff66;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.death-ticket-card .btn:hover {
+  background-color: #ffff66;
+  color: #000;
+}
+
+/* === Image Preview === */
+.death-ticket-img {
+  max-width: 100%;
+  width: 300px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}

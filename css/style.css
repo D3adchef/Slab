@@ -1,0 +1,163 @@
+/* === GLOBAL STYLES === */
+body {
+  background-color: #000;
+  color: #fefefe;
+  font-family: 'UnifrakturCook', 'Cinzel', 'Georgia', serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* === NAVBAR === */
+.custom-navbar {
+  background-color: #010101;
+  padding: 1rem 0 0.5rem;
+  border-bottom: 1px solid #222;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 0.5rem 0;
+}
+
+.logo-img {
+  width: 80px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.navbar-nav {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.nav-link {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin: 0 15px;
+  position: relative;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: #ffff66;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: #ffff66;
+  box-shadow: 0 0 10px #ffff66;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* === NAVBAR TOGGLER (Hamburger Button) === */
+.navbar-toggler {
+  border: none;
+  background: none;
+  font-size: 1.5rem;
+  color: #ffff66;
+  cursor: pointer;
+}
+
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.navbar-collapse {
+  text-align: center;
+}
+
+/* Make navbar links stack vertically on small screens */
+@media (max-width: 991.98px) {
+  .navbar-nav {
+    flex-direction: column;
+  }
+}
+
+/* === HERO SECTION === */
+.hero-section {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../images/slabhero.png") center/cover no-repeat;
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.main-section {
+  background: url("../images/slabbackground.png") center/cover no-repeat;
+  background-attachment: fixed;
+  padding: 4rem 0;
+}
+
+/* === AWARDS & MENU === */
+.award-container {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.award-img {
+  width: 80px;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 0 0 10px crimson;
+}
+
+.menu-container {
+  text-align: center;
+}
+
+.menu-img {
+  max-width: 90%;
+  height: auto;
+  box-shadow: 0 0 20px crimson;
+}
+
+/* === FOOTER === */
+footer {
+  background-color: #111;
+  border-top: 1px solid #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+
+.footer-logo-img {
+  width: 60px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.footer-hours {
+  text-align: center;
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
+
+.social-icons {
+  width: 130px;
+  height: auto;
+  margin-top: 5px;
+}

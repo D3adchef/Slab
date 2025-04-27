@@ -1,0 +1,24 @@
+/* === HERO SECTION (Feast) === */
+.hero-feast {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+              url("../images/feast.png") center/cover no-repeat;
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* === MAIN SECTION (Feast) === */
+.feast-main {
+  background: url("../images/slabbackground.png") center/cover no-repeat fixed;
+  padding: 4rem 0;
+}
+
+/* === Menu Image === */
+.menu-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(200, 0, 0, 0.4); /* Darker crimson tone */
+}
